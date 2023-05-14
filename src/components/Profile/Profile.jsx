@@ -17,7 +17,7 @@ const Profile = ({ username, tag, location, avatar, stats }) => {
         <img
           src={avatar}
           alt="User avatar"
-          style={{ width: '100%', height: '100%', borderRadius: '50%' }}
+          style={{ width: '200px', height: '200px', borderRadius: '50%' }}
         />
         <p style={{ fontSize: '20px', fontWeight: 'bold' }}>{username}</p>
         <p style={{ color: '#666', marginTop: '5px' }}>@{tag}</p>
