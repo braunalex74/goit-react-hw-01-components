@@ -6,7 +6,7 @@ const Profile = ({ username, tag, location, avatar, stats }) => {
   return (
     <div
       style={{
-        width: '400px', // Змініть ширину основної картки за необхідністю
+        width: '400px',
         padding: '20px',
         border: '1px solid #ccc',
         borderRadius: '5px',
@@ -17,7 +17,7 @@ const Profile = ({ username, tag, location, avatar, stats }) => {
         <img
           src={avatar}
           alt="User avatar"
-          style={{ width: '100px', height: '100px', borderRadius: '50%' }}
+          style={{ width: '100%', height: '100%', borderRadius: '50%' }}
         />
         <p style={{ fontSize: '20px', fontWeight: 'bold' }}>{username}</p>
         <p style={{ color: '#666', marginTop: '5px' }}>@{tag}</p>
