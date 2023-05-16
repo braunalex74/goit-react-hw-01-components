@@ -1,8 +1,7 @@
-import React from 'react';
-import Profile from './Profile/Profile';
-import user from './user.json';
+import user from './Profile/user.json';
+import { Profile } from './Profile/Profile';
 
-const App = () => {
+export const App = () => {
   return (
     <div>
       <Profile
@@ -15,5 +14,3 @@ const App = () => {
     </div>
   );
 };
-
-export default App;
