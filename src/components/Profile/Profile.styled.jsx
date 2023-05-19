@@ -5,17 +5,16 @@ export const ProfileCard = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 10px;
 
   margin: 0 auto;
-  margin-bottom: ${props => props.theme.space[5]}px;
-  padding: ${props => props.theme.space[4]}px;
+  margin-bottom: ${props => props.theme.space[2]}px;
+  padding: ${props => props.theme.space[5]}px;
   max-width: 100%;
-  width: 360px;
+  width: 350px;
 
-  border-radius: ${props => props.theme.radii.medium};
+  border-radius: ${props => props.theme.rad.medium};
   box-shadow: -1px -1px 1px #fff, 1px 1px 1px #babecc;
-  background-color: ${props => props.theme.colors.background};
+  background-color: ${props => props.theme.colors.white};
 `;
 
 export const Description = styled.div`
@@ -23,43 +22,34 @@ export const Description = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 10px;
-  margin-bottom: ${props => props.theme.space[4]}px;
 `;
 
 export const Avatar = styled.img`
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 150px;
-  width: 150px;
+  height: 170px;
+  width: 170px;
   border-radius: 50%;
-  box-shadow: -3px -3px 7px #ffffff, 3px 3px 5px #ceced1;
-  &:hover {
-    background: #ecf0f3;
-    box-shadow: inset -3px -3px 7px #ffffff, inset 3px 3px 5px #ceced1;
-  }
 `;
 
 export const Info = styled.p`
   color: ${props => props.theme.colors.accent};
-  text-shadow: 1px 1px 1px ${props => props.theme.colors.white};
   font-family: ${props => props.theme.fonts.heading};
   font-size: ${props => props.theme.fontSizes.m};
 `;
 
 export const Name = styled(Info)`
-  color: ${props => props.theme.colors.accent};
   font-size: ${props => props.theme.fontSizes.l};
   font-weight: 500;
 `;
 
 export const Tag = styled(Info)`
-  color: ${props => props.theme.colors.primary};
+  color: ${props => props.theme.colors.text};
 `;
 
 export const Location = styled(Info)`
-  color: ${props => props.theme.colors.secondary};
+  color: ${props => props.theme.colors.text};
 `;
 
 export const StatsList = styled.ul`
@@ -67,7 +57,7 @@ export const StatsList = styled.ul`
   gap: 10px;
   justify-content: center;
   align-items: center;
-  padding: ${props => props.theme.space[4]}px;
+  padding: ${props => props.theme.space[1]}px;
   width: 100%;
 `;
 
@@ -77,10 +67,7 @@ export const StatsItem = styled.li`
   justify-content: center;
   flex-direction: column;
   width: 100%;
-  &:hover {
-    background: #ecf0f3;
-    box-shadow: inset -3px -3px 7px #ffffff, inset 3px 3px 5px #ceced1;
-  }
+
   :not(:last-child) {
     border-right: 1px dotted ${props => props.theme.colors.primary};
   }
@@ -88,16 +75,16 @@ export const StatsItem = styled.li`
 
 export const StatsInfo = styled.span`
   margin: 0px 5px;
-  color: ${props => props.theme.colors.primary};
-  font-size: 16px;
+  color: ${props => props.theme.colors.text};
+  font-size: 15px;
 `;
 
 export const Label = styled(StatsInfo)`
-  font-weight: 400;
+  font-weight: 700;
 `;
 
 export const Quantity = styled(StatsInfo)`
-  color: ${props => props.theme.colors.secondary};
-  text-shadow: 1px 1px 1px #fff;
+  color: ${props => props.theme.colors.black};
   font-weight: ${props => props.theme.fontWeights.bold};
+  font-size: 20px;
 `;
