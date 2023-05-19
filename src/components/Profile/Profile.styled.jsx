@@ -7,14 +7,14 @@ export const ProfileCard = styled.div`
   justify-content: center;
 
   margin: 0 auto;
-  margin-bottom: ${props => props.theme.space[2]}px;
-  padding: ${props => props.theme.space[5]}px;
+  margin-bottom: ${props => props.theme.space[1]}px;
+  padding: ${props => props.theme.space[3]}px;
   max-width: 100%;
   width: 350px;
 
   border-radius: ${props => props.theme.rad.medium};
   box-shadow: -1px -1px 1px #fff, 1px 1px 1px #babecc;
-  background-color: ${props => props.theme.colors.white};
+  background-color: ${props => props.theme.colors.primary};
 `;
 
 export const Description = styled.div`

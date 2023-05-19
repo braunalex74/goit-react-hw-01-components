@@ -4,7 +4,7 @@ export const theme = {
     white: '#fff',
     text: '#615e5e',
     background: '#5e6171',
-    primary: '#2b3162',
+    primary: '#e3e4ed',
   },
   space: [0, 2, 4, 8, 16, 32, 64, 128, 256],
   fonts: {
