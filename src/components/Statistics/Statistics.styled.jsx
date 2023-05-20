@@ -8,10 +8,9 @@ export const Section = styled.section`
   margin: 0 auto;
   margin-bottom: ${props => props.theme.space[3]}px;
   max-width: 100%;
-  width: 360px;
+  width: 355px;
 
   box-shadow: -1px -1px 1px #fff, 1px 1px 1px #babecc;
-  border-radius: 10px;
 `;
 
 export const Title = styled.h2`
@@ -48,14 +47,6 @@ export const StatListItem = styled.li`
   height: 100%;
 
   text-shadow: 0 0 1px #000;
-
-  :first-child {
-    border-bottom-left-radius: ${props => props.theme.rad.m};
-  }
-
-  :last-child {
-    border-bottom-right-radius: ${props => props.theme.rad.m};
-  }
 
   background-color: ${props => getRandomHexColor(props.index)};
 `;
