@@ -8,7 +8,7 @@ export const ProfileCard = styled.div`
 
   margin: 0 auto;
   margin-bottom: ${props => props.theme.space[1]}px;
-  padding: ${props => props.theme.space[3]}px;
+  padding: ${props => props.theme.space[1]}px;
   max-width: 100%;
   width: 350px;
 
@@ -28,20 +28,27 @@ export const Avatar = styled.img`
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 170px;
-  width: 170px;
-  border-radius: 50%;
+  height: 130px;
+  width: 130px;
+  border-radius: ${props => props.theme.rad.round};
+  margin-top: 50px;
 `;
 
 export const Info = styled.p`
   color: ${props => props.theme.colors.accent};
   font-family: ${props => props.theme.fonts.heading};
-  font-size: ${props => props.theme.fontSizes.m};
+  font-size: ${props => props.theme.fontSizes.xs};
+  margin: 10px;
+  padding: 0;
+  list-style: none;
 `;
 
 export const Name = styled(Info)`
   font-size: ${props => props.theme.fontSizes.l};
-  font-weight: 500;
+  font-weight: ${props => props.theme.fontWeights.bold};
+  margin: 0;
+  padding: 0;
+  list-style: none;
 `;
 
 export const Tag = styled(Info)`
