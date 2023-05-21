@@ -7,6 +7,7 @@ export const theme = {
     primary: '#e3e4ed',
     statscolor: '#1c3b27',
     img: '#d3d6ea',
+    th: '#400075',
   },
 
   space: [0, 2, 4, 8],

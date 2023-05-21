@@ -9,9 +9,10 @@ export const FriendListItem = styled.li`
   padding: ${props => props.theme.space[3]}px;
 
   max-width: 100%;
-  width: 350px;
+  width: 340px;
 
-  box-shadow: -1px -1px 1px #fff, 1px 1px 1px #babecc;
+  box-shadow: -1px -1px 1px ${props => props.theme.colors.white},
+    1px 1px 1px ${props => props.theme.colors.img};
   background-color: ${props => props.theme.colors.primary};
 `;
 
@@ -42,7 +43,7 @@ export const Image = styled.img`
 export const Name = styled.p`
   margin-left: 10px;
   color: ${props => props.theme.colors.text};
-  text-shadow: 1px 1px 1px #fff;
+  text-shadow: 1px 1px 1px ${props => props.theme.colors.white};
   font-size: 16px;
   font-weight: 700;
 `;

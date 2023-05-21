@@ -10,15 +10,16 @@ export const Section = styled.section`
   max-width: 100%;
   width: 355px;
 
-  box-shadow: -1px -1px 1px #fff, 1px 1px 1px #babecc;
+  box-shadow: -1px -1px 1px ${props => props.theme.colors.white},
+    1px 1px 1px ${props => props.theme.colors.img};
 `;
 
 export const Title = styled.h2`
   padding: ${props => props.theme.space[1]}px;
 
-  border-bottom: 1px solid #d3d5e3;
+  border-bottom: 1px solid ${props => props.theme.colors.img};
   color: ${props => props.theme.colors.accent};
-  text-shadow: 1px 1px 1px #fff;
+  text-shadow: 1px 1px 1px ${props => props.theme.colors.white};
   font-weight: ${props => props.theme.fontWeights.bold};
   font-size: ${props => props.theme.fontSizes.l};
 

@@ -6,22 +6,23 @@ export const Table = styled.table`
 
   max-width: 100%;
   width: 100%;
-  box-shadow: -0.0625rem -0.0625rem 0.0625rem #fff,
-    0.0625rem 0.0625rem 0.0625rem #babecc;
+  box-shadow: -0.0625rem -0.0625rem 0.0625rem ${props => props.theme.colors.white},
+    0.0625rem 0.0625rem 0.0625rem ${props => props.theme.colors.img};
 `;
 
 export const Thead = styled.thead`
   background-color: ${props => props.theme.colors.background};
 
-  text-shadow: 0.0625rem 0.0625rem 0.0625rem #fff;
+  text-shadow: 0.0625rem 0.0625rem 0.0625rem
+    ${props => props.theme.colors.white};
   font-size: ${props => props.theme.fontSizes.xs};
   text-transform: uppercase;
 `;
 
 export const Tr = styled.tr`
   background-color: rgb(115, 120, 175);
-  color: #ffffff;
-  text-shadow: 0.0625rem 0.0625rem 0.0625rem #400075;
+  color: ${props => props.theme.colors.white};
+  text-shadow: 0.0625rem 0.0625rem 0.0625rem ${props => props.theme.colors.th};
 `;
 
 export const Th = styled.th`
@@ -36,7 +37,6 @@ export const Tbody = styled.tbody`
 
 export const Td = styled.td`
   padding-left: ${props => props.theme.space[3]}px;
-  border-right: 0.125rem solid #e9edff;
 `;
 
 export const Type = styled(Td)`
