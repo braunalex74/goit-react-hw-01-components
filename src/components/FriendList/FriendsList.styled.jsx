@@ -5,7 +5,7 @@ export const FriendsList = styled.ul`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 16px;
+  gap: 10px;
 
   margin: 0 auto;
   padding: 0;
