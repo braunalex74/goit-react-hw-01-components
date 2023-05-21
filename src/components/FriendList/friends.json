@@ -1,5 +1,20 @@
 [
-  { "id": 1, "name": "Helena", "avatar": "#", "isOnline": true },
-  { "id": 1, "name": "Alex", "avatar": "#", "isOnline": true },
-  { "id": 1, "name": "Ameli", "avatar": "#", "isOnline": false }
+  {
+    "avatar": "https://cdn-icons-png.flaticon.com/512/2922/2922506.png",
+    "name": "Helena",
+    "isOnline": true,
+    "id": 1
+  },
+  {
+    "avatar": "https://cdn-icons-png.flaticon.com/512/2922/2922506.png",
+    "name": "Alex",
+    "isOnline": true,
+    "id": 2
+  },
+  {
+    "avatar": "https://cdn-icons-png.flaticon.com/512/2922/2922506.png",
+    "name": "Ameli",
+    "isOnline": false,
+    "id": 3
+  }
 ]

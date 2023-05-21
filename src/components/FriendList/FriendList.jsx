@@ -1,19 +1,19 @@
 import React from 'react';
-import { FriendListItem } from './FriendListItem';
-import { FriendListItem } from './FriendList.styled';
+import { FriendsListItem } from './FriendListItem';
+import { FriendsList } from './FriendsList.styled';
 
 export const FriendList = ({ friends }) => {
   return (
     <FriendsList>
-      {friends.map(friend => {
-        <FriendListItem
+      {friends.map(friend => (
+        <FriendsListItem
           key={friend.id}
           id={friend.id}
           avatar={friend.avatar}
           name={friend.name}
           isOnline={friend.isOnline}
-        />;
-      })}
+        />
+      ))}
     </FriendsList>
   );
 };

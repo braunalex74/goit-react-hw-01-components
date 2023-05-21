@@ -8,7 +8,7 @@ export const theme = {
     statscolor: '#1c3b27',
   },
 
-  space: [0, 2, 4, 7],
+  space: [0, 2, 4, 8],
   fonts: {
     body: 'system-ui, sans-serif',
     heading: 'Roboto',

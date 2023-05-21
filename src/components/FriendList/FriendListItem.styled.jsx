@@ -1,36 +1,24 @@
 import styled from 'styled-components';
 
-export const FriendList = styled.ul`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 16px;
-
-  margin: 0 auto;
-  padding: 0;
-  list-style: none;
-  margin-bottom: ${props => props.theme.space[5]}px;
-`;
-
-export const FriendLitItem = styled.li`
+export const FriendListItem = styled.li`
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  gap: 42px;
+  gap: 50px;
   margin: 0 auto;
-  padding: ${props => props.theme.space[3]}px;
+  padding: ${props => props.theme.space[1]}px;
 
   max-width: 100%;
-  width: 360px;
+  width: 350px;
 
+  border-radius: 8px;
   box-shadow: -1px -1px 1px #fff, 1px 1px 1px #babecc;
-  background-color: ${props => props.theme.colors.background};
+  background-color: ${props => props.theme.colors.primary};
 `;
 
 export const Status = styled.span`
   display: block;
-  margin-left: 1.625rem;
+  margin-left: 20px;
   width: 16px;
   height: 16px;
   border-radius: 50%;
@@ -48,17 +36,11 @@ export const Image = styled.img`
   width: 60px;
 
   border-radius: 50%;
-  box-shadow: -3px -3px 7px #ffffff, 3px 3px 5px #ceced1;
-
-  &:hover {
-    background: #ecf0f3;
-    box-shadow: inset -3px -3px 7px #ffffff, inset 3px 3px 5px #ceced1;
-  }
 `;
 
 export const Name = styled.p`
   margin-left: 10px;
-  color: #9e0202;
+  color: ${props => props.theme.colors.text};
   text-shadow: 1px 1px 1px #fff;
   font-size: 16px;
   font-weight: 700;
