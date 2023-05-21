@@ -2,8 +2,7 @@ import styled from 'styled-components';
 
 export const Table = styled.table`
   margin: 0 auto;
-  margin-bottom: ${props => props.theme.space[5]}px;
-  padding: ${props => props.theme.space[4]}px;
+  padding: ${props => props.theme.space[3]}px;
 
   max-width: 100%;
   width: 100%;
@@ -13,10 +12,9 @@ export const Table = styled.table`
 
 export const Thead = styled.thead`
   background-color: ${props => props.theme.colors.background};
-  color: ${props => props.theme.colors.accent};
+
   text-shadow: 0.0625rem 0.0625rem 0.0625rem #fff;
-  font-family: ${props => props.theme.fonts.heading};
-  font-size: 1rem;
+  font-size: ${props => props.theme.fontSizes.xs};
   text-transform: uppercase;
 `;
 
@@ -28,7 +26,7 @@ export const Tr = styled.tr`
 
 export const Th = styled.th`
   padding: 0.5rem 0;
-  padding-left: ${props => props.theme.space[4]}px;
+  padding-left: ${props => props.theme.space[3]}px;
   text-align: left;
 `;
 
@@ -37,7 +35,7 @@ export const Tbody = styled.tbody`
 `;
 
 export const Td = styled.td`
-  padding-left: ${props => props.theme.space[4]}px;
+  padding-left: ${props => props.theme.space[3]}px;
   border-right: 0.125rem solid #e9edff;
 `;
 
@@ -47,5 +45,5 @@ export const Type = styled(Td)`
 
 export const ExtTr = styled(Tr)`
   background-color: ${props =>
-    props.idx % 2 === 0 ? props.theme.colors.muted : 'transparent'};
+    props.id_index % 2 === 0 ? props.theme.colors.img : 'transparent'};
 `;
